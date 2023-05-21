@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>Welcome to the Website</title>
+  <style type="text/css">
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="col-12 col-md-10 col-lg-8 col-xl-12 text-center">
+
+    <!-- Preheading -->
+    <h2 class="heading-xxs mb-3 text-gray-400">
+      Welcome to the Warehouse Safety Detection.
+    </h2>
+
+    <!-- Subheading -->
+    <p class="mb-10 text-gray-500">
+      Warehouse safety is a set of regulatory guidelines and industry best practices to help warehousing personnel ensure a safe work environment and reinforce safe behavior when working in warehouses. For sustainable warehouse operations, health and safety should be prioritized as the Occupational Safety and Health Administration (OSHA) revealed that the fatal injury rate for the warehousing industry is higher than the national average for all industries. This model can detect the safety equipments and trained with Yolo v7. The mPA of this model is around 87% and still learning.
+    </p>
+
+  </div>
+  <div>
+    <div class="col-12 col-md-10 col-lg-8 col-xl-12 text-center mt-2 bg-red d-flex justify-content-center">
+      <form action="/" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+          <input class="form-control" type="file" id="formFileMultiple" name="file" value="file">
+        </div>
+        <button type="submit" class="btn btn-secondary">Click Here to Submit!</button>
+      </form>
+    </div>
+
+  </div><br>
+  <div class="row gy-50">
+    <div class="col-lg-5 offset-lg-1 animated" data-show="startbox"
+      style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
+      <!-- Demo--><a class="card card-demo text-dark" href="home-01.html"><span
+          class="card-img shadow-lg rounded-bottom-4 rounded-top-3 overflow-hidden"><span
+            class="browser-topbar"><span></span><span></span><span></span></span><img class="w-100" loading="lazy"
+            src="{{orginal}}"
+            alt=""></span><span class="card-body"><span class="card-title h4">Orginal Image</span></span></a>
+    </div>
+    <div class="col-lg-5 animated" data-show="startbox" data-show-delay="100"
+      style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
+      <!-- Demo--><a class="card card-demo text-dark" href="home-02.html"><span
+          class="card-img shadow-lg rounded-bottom-4 rounded-top-3 overflow-hidden"><span
+            class="browser-topbar"><span></span><span></span><span></span></span><img class="w-100" loading="lazy"
+            src="data:image/jpeg;base64,{{ detected }}"
+            alt=""></span><span class="card-body"><span class="card-title h4">Detected Image</span></span></a>
+    </div>
+  </div>
+
+  </div>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2:
+
+    -->
+</body>
+
+</html>
